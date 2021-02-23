@@ -1,0 +1,28 @@
+{
+  "name": "gerar-pdf-nodejs",
+  "version": "1.0.0",
+  "description": "Gerando PDF com NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidlpc1/gerar-pdf-nodejs.git"
+  },
+  "keywords": [],
+  "author": "“davidlpc1” <davilucasdlcreator@gmail.com>",
+  "license": "“MIT”",
+  "bugs": {
+    "url": "https://github.com/davidlpc1/gerar-pdf-nodejs/issues"
+  },
+  "homepage": "https://github.com/davidlpc1/gerar-pdf-nodejs#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "html-pdf": "^2.2.0",
+    "nodemon": "^2.0.7",
+    "phantomjs": "^2.1.7",
+    "puppeteer": "^7.1.0"
+  }
+}
