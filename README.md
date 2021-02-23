@@ -4,45 +4,44 @@
 
 # Como exportar um PDF com NodeJS
 
-* [ ] Pq eu preciso exportar um PDF?
-* [ ] Existem outras ferramentas?
-* [ ] Pq eu vou usar o NodeJS?
+* [X] Pq eu preciso exportar um PDF?
+* [X] Existem outras ferramentas?
+* [X] Pq eu vou usar o NodeJS?
 
 # O que vamos aprender aqui?
-* [ ] NodeJS
+* [] NodeJS
 * [ ] Criar um servidor com uma rota
 * [ ] Usar um template engine
 * [ ] Usar callbacks
 
 # Bora codar?
-* [ ] Iniciar o projeto com NPM
-* [ ] Instalar dependencias`express ejs html-pdf`
-* [ ] Iniciar o servidor
-* [ ] Criar uma rota da aplicação
-    * [ ] Entender request, response
-    * [ ] Primeiro entendimento de callback
-    * [ ] Está confuso sobre HTTP? Discover
-* [ ] Criar uma lista de dados para criar o relatório
-* [ ] Criar um HTML
-* [ ] Mostrar na rota
-* [ ] Enviar dados para o HTML (template engine)
-* [ ] Segundo entedimento de callback
-* [ ] Utilizar o html-pdf e configurar as opções
-* [ ] Callback de novo?
-* [ ] Gerar o arquivo
+* [X] Iniciar o projeto com NPM
+* [X] Instalar dependencias`express ejs html-pdf`
+* [X] Iniciar o servidor
+* [X] Criar uma rota da aplicação
+    * [X] Entender request, response
+    * [X] Primeiro entendimento de callback
+* [X] Criar uma lista de dados para criar o relatório
+* [X] Criar um HTML
+* [X] Mostrar na rota
+* [X] Enviar dados para o HTML (template engine)
+* [X] Segundo entedimento de callback
+* [X] Utilizar o html-pdf e configurar as opções
+* [X] Callback de novo?
+* [X] Gerar o arquivo
 
 # Bônus
 
-* [ ] Melhorar o estilo do PDF
-* [ ] Utilizar o `puppeteer`
-* [ ] criar uma nova rota para exportação
-* [ ] iniciar o puppeteer (headless)
-* [ ] iniciar a página
-* [ ] ir para URL (aguardar toda a página ser carregada)
-* [ ] configurar e gerar o pdf
-* [ ] fechar o browser
-* [ ] configurar o tipo de conteúdo da rota como `application/pdf`
-* [ ] exportar o PDF
+* [X] Melhorar o estilo do PDF
+* [X] Utilizar o `puppeteer`
+* [X] criar uma nova rota para exportação
+* [X] iniciar o puppeteer (headless)
+* [X] iniciar a página
+* [X] ir para URL (aguardar toda a página ser carregada)
+* [X] configurar e gerar o pdf
+* [X] fechar o browser
+* [X] configurar o tipo de conteúdo da rota como `application/pdf`
+* [X] exportar o PDF
 
 # Próximos passos
 
