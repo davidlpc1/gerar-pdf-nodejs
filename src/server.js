@@ -6,30 +6,33 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-const passengers = [
-  {
-    name: "Joyce",
-    flightNumber: 7859,
-    time: "18h00",
-  },
-  {
-    name: "Brock",
-    flightNumber: 7859,
-    time: "18h00",
-  },
-  {
-    name: "Eve",
-    flightNumber: 7859,
-    time: "18h00",
-  },
-];
+
+// const passengers = [
+//   {
+//     name: "Joyce",
+//     flightNumber: 7859,
+//     time: "18h00",
+//   },
+//   {
+//     name: "Brock",
+//     flightNumber: 7859,
+//     time: "18h00",
+//   },
+//   {
+//     name: "Eve",
+//     flightNumber: 7859,
+//     time: "18h00",
+//   },
+// ];
 
 app.get('/pdf',async(req,res) => {
   try {
+    let { url } = req.query
+    if(!url) url="http://localhost:3000"
     const browser = await puppeteer.launch({ headless:true })
     const page = await browser.newPage();
   
-    await page.goto('http://localhost:3000',{
+    await page.goto(url,{
       waitUntil: 'networkidle0'
     })
   
@@ -56,7 +59,7 @@ app.get('/pdf',async(req,res) => {
 
 app.get("/", (req, res) => {
   const htmlFilePath = path.join(__dirname, "print.ejs");
-  ejs.renderFile(htmlFilePath, { passengers }, (error, html) => {
+  ejs.renderFile(htmlFilePath, { passengers:[],imageSrc:"https://github.com/davidlpc1.png" }, (error, html) => {
     if (error) return res.send({ error, message: "Error on html reading" });
 
     return res.send(html)
